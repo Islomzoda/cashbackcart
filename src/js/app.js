@@ -1,6 +1,3 @@
-
-
-
 let obj = {
     obj1: {
          sum: 5500,
@@ -15,7 +12,7 @@ let obj = {
          category: 'special',
      }
  };
- const regular = 0.01
+ const regular = 0.01;
  const increased = 0.05;
  const special = 0.3;
  
@@ -24,17 +21,12 @@ let obj = {
  }
  
  if(obj.obj2.category === 'increased'){
-     ans = obj.obj2.sum * increased;
+     ans2 = obj.obj2.sum * increased; 
     }
  
  if(obj.obj3.category === 'special'){
-     ans = obj.obj3.sum * special;
+     ans3 = obj.obj3.sum * special;
     }
- 
- 
- 
- 
- 
- 
+
  console.log(obj);
- console.log(ans + ' рублей');
+ console.log(ans + ans2 + ans3 + ' рублей');

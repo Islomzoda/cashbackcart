@@ -1,7 +1,6 @@
 {
   "name": "cashbackvithcart",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "live-server src"
@@ -11,5 +10,26 @@
   "license": "ISC",
   "devDependencies": {
     "live-server": "^1.2.1"
-  }
+  },
+  "dependencies": {
+    "fsevents": "^1.2.11",
+    "get-value": "^2.0.6",
+    "graceful-fs": "^4.2.3",
+    "has-values": "^1.0.0",
+    "http-parser-js": "^0.4.10",
+    "inherits": "^2.0.4",
+    "is-accessor-descriptor": "^0.1.6",
+    "is-binary-path": "^1.0.1",
+    "is-buffer": "^1.1.6",
+    "is-data-descriptor": "^0.1.4",
+    "is-descriptor": "^0.1.6",
+    "is-extendable": "^0.1.1",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.1",
+    "is-number": "^3.0.0",
+    "is-windows": "^1.0.2",
+    "is-wsl": "^1.1.0",
+    "isarray": "^1.0.0"
+  },
+  "description": ""
 }

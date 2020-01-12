@@ -1,32 +1,46 @@
-let obj = {
-    obj1: {
-         sum: 5500,
-         category: 'regular',
-     },
-     obj2: {
-         sum: 3920,
-         category: 'increased',
-     },
-     obj3: {
-         sum: 1980,
-         category: 'special',
-     }
- };
- const regular = 0.01;
- const increased = 0.05;
- const special = 0.3;
- 
- if(obj.obj1.category === 'regular'){
-  ans = obj.obj1.sum * regular;
- }
- 
- if(obj.obj2.category === 'increased'){
-     ans2 = obj.obj2.sum * increased; 
-    }
- 
- if(obj.obj3.category === 'special'){
-     ans3 = obj.obj3.sum * special;
-    }
 
- console.log(obj);
- console.log(ans + ans2 + ans3 + ' рублей');
+
+const protsentRegular = 0.01;
+const protsentIncreased = 0.05;
+const protsentSpecial = 0.3;
+const cashbackLimit = 3000;
+const REGULAR_CATEGORY = 'regular';
+const INCREASED_CATEGORY = 'increased';
+const SPECIAL_CATEGORY = 'special'; 
+
+
+
+const  purchases = [
+    {
+    amount: 1510,
+    category: REGULAR_CATEGORY,
+    },
+    {
+        amount: 274,
+        category: INCREASED_CATEGORY,
+    },
+    {
+        amount: 1245,
+        category: SPECIAL_CATEGORY,
+    },
+];
+
+let cashback = 0;
+
+
+ for(const purchase of purchases){
+    if (purchase.category == REGULAR_CATEGORY){
+        cashback = protsentRegular * purchases[0].amount, REGULAR_CATEGORY;
+    } else if (purchase.category == INCREASED_CATEGORY){
+        cashback = protsentIncreased * purchases[1].amount, INCREASED_CATEGORY;
+    } else if (purchase.category == SPECIAL_CATEGORY){
+        cashback = protsentSpecial * purchases[2].amount, SPECIAL_CATEGORY;
+    }  
+ }
+
+
+if (cashback > cashbackLimit) {
+     cashback = cashbackLimit
+};
+
+ console.log(cashback +' рублей');
